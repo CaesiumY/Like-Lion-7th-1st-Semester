@@ -7,3 +7,6 @@ def home(request):
 
 def about(request):
     return render(request, 'wordcount/about.html')
+
+def result(request):
+    return render(request, 'wordcount/result.html')
