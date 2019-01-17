@@ -20,4 +20,4 @@ def result(request):
         else:
             text_dic[word] = 1
 
-    return render(request, 'wordcount/result.html', { 'full' : text, 'total' : splited_text, 'count' : text_dic.items() })
+    return render(request, 'wordcount/result.html', { 'full' : text, 'total' : splited_text, 'count' : sorted(text_dic.items(), key=lambda x : x[1], reverse=True) })
