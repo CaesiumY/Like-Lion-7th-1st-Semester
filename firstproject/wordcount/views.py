@@ -9,4 +9,6 @@ def about(request):
     return render(request, 'wordcount/about.html')
 
 def result(request):
-    return render(request, 'wordcount/result.html')
+    text = request.GET["fulltext"]
+    splited_text = text.split()
+    return render(request, 'wordcount/result.html', { 'full' : text, 'total' : splited_text })
