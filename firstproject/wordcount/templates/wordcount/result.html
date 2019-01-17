@@ -1,16 +1,29 @@
-<h1>총 단어 수는 {{total | length}} 입니다.</h1>
-<h1>총 글자 수는 {{full | length}} <a style="font-size : 15; font-weight: normal">(공백포함)</a> 입니다.</h1>
+<!doctype html>
+<html lang="ko">
 
-<a href="{%url 'home'%}"></a>
+<head>
+    <meta charset="utf-8">    
+    <title>Word Count!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+</head>
 
-<br>
-<h2>입력한 텍스트 : </h2>
-{{full}}
+<body style="padding-left: 20px">
+    <h1>총 단어 수는 {{total | length}} 입니다.</h1>
+    <h1>총 글자 수는 {{full | length}} <a style="font-size : 15; font-weight: normal">(공백포함)</a> 입니다.</h1>
 
-<br>
-<h2>단어 카운트 : </h2>
+    <a href="{%url 'home'%}"></a>
 
-{% for word, num in count %}
-    {{word}} : {{num}}
     <br>
-{% endfor %}
+    <h2>입력한 텍스트 : </h2>
+    {{full}}
+
+    <br>
+    <h2>단어 카운트 : </h2>
+
+    {% for word, num in count %}
+        {{word}} : {{num}}
+        <br>
+    {% endfor %}
+</body>
