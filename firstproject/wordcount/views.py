@@ -11,4 +11,13 @@ def about(request):
 def result(request):
     text = request.GET["fulltext"]
     splited_text = text.split()
-    return render(request, 'wordcount/result.html', { 'full' : text, 'total' : splited_text })
+
+    text_dic = {}
+
+    for word in splited_text:
+        if word in text_dic:
+            text_dic[word] += 1
+        else:
+            text_dic[word] = 1
+
+    return render(request, 'wordcount/result.html', { 'full' : text, 'total' : splited_text, 'count' : text_dic.items() })
