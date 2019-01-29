@@ -17,7 +17,7 @@
     <!-- 네비게이션 바 추가 -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #222">
         <h3><a class="navbar-brand jalnan" href="#" style="color:#f6921e; font-size: 1em; padding-top: 15px">LIKE LION</a></h3>
-        <a class="navbar-brand page-scroll font-italic goyang" href="#page-top" style="color:#fed136; font-size: 1.5em">@ JBNU</a>        
+        <a class="navbar-brand page-scroll jalnan" href="#page-top" style="color:#fed136;">@ JBNU</a>        
         <!-- 모바일용 확장 버튼 -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,15 +31,19 @@
                 <a class="nav-item nav-link disabled" href="#">Disabled</a>
             </div>
         </div>
-    </nav>   
+    </nav>
+    
+    <div class="container">
+        {% for blog in blogs.all%}
+            <br>
+            <h1>{{blog.title}}</h1>
+            <p>{{blog.pub_date}}</p>
+            <p>{{blog.body}}</p>
+            <br>
+        {%endfor%}
+    </div>
+
 </body>
 </html>
 
 
-<!-- {% for blog in blogs.all%}
-
-    <h1>{{blog.title}}</h1>
-    <p>{{blog.pub_date}}</p>
-    <p>{{blog.body}}</p>
-    <br><br>
-{%endfor%} -->
