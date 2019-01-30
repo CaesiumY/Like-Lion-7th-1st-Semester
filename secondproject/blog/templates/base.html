@@ -32,22 +32,35 @@
             </div>
         </div>
     </nav>
-    
+
+    <main>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {%block content%}
+                    {%endblock%}
+                </div>
+            </div>
+        </div>
+    </main>
+
     <div class="container">
 
+
+
         <!-- 모델 출력 테스트 -->
-        {% for blog in blogs.all%}
+        <!-- {% for blog in blogs.all%}
             <br>
             <h1>{{blog.title}}</h1>
             <p>{{blog.pub_date}}</p>
             <p>{{blog.body}}</p>
             <br>
-        {%endfor%}
+        {%endfor%} -->
         
         <!-- 페이스북 임베디드 테스트 -->
-        <div class="facebook">
+        <!-- <div class="facebook">
             <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flikelioncbnu%2Fposts%2F847048665453966&width=500" width="500" height="643" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-        </div>
+        </div> -->
 
         <!-- footer 추가 -->
         <footer class="container">
