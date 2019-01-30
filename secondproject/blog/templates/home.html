@@ -8,7 +8,9 @@
 <!-- 모델 출력 테스트 -->
 {% for blog in blogs.all%}
 <br>
-<h1>{{blog.title}}</h1>
+<a href="{%url 'detail' blog.id%}">
+    <h1>{{blog.title}}</h1>
+</a>
 <p>{{blog.pub_date}}</p>
 <p>{{blog.body}}</p>
 <br>
