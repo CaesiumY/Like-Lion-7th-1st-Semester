@@ -14,9 +14,9 @@ def create(request):
     return redirect('/blog/' + str(blog.id))
 
 
-def home(request):
+def blog(request):
     blogs = Blog.objects
-    return render(request, 'home.html', {'blogs': blogs})
+    return render(request, 'blog.html', {'blogs': blogs})
 
 
 def detail(request, blog_id):

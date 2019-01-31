@@ -40,5 +40,10 @@
             'https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v3.2&appId=178858566154713&autoLogAppEvents=1';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+
+    (function () {
+        var element = document.getElementById("blog");
+        element.classList.add("active");
+    })();
 </script>
 {%endblock%}
