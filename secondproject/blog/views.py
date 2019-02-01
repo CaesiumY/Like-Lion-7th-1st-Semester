@@ -30,3 +30,9 @@ def new(request):
 
 def home(request):
     return render(request, 'home.html')
+
+
+def destroy(request, blog_id):
+    blog = get_object_or_404(Blog, pk=blog_id)
+    blog.delete()
+    return redirect('/blog/')
