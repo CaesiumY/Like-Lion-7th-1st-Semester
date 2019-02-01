@@ -26,3 +26,7 @@ def detail(request, blog_id):
 
 def new(request):
     return render(request, 'new.html')
+
+
+def home(request):
+    return render(request, 'home.html')

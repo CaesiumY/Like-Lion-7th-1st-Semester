@@ -16,4 +16,11 @@
     <p><a href="{%url 'detail' blog.id%}">이전 글</a></p>
     <p><a href="{%url 'detail' blog.id%}">다음 글</a></p>
 </div>
+
+<script>
+    (function () {
+        var element = document.getElementById("blog");
+        element.classList.add("active");
+    })();
+</script>
 {%endblock%}
