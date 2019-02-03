@@ -7,4 +7,6 @@ urlpatterns = [
     path('new/', blog.views.new, name="new"),
     path('create/', blog.views.create, name="create"),
     path('detail/<int:blog_id>/destroy', blog.views.destroy, name="destroy"),
+
+    # path('edit/<int:post_id>/', edit_view, name='edit'),
 ]
