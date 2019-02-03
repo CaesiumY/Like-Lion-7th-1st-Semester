@@ -18,8 +18,8 @@
     </div>
 </div>
 <div class='blogs'>
-    <p><a href="{%url 'detail' blog.id%}">이전 글</a></p>
-    <p><a href="blog:detail" post.id|add:"1" %}">다음 글</a></p>
+    <p><a href="{%url 'detail' blog.id|add:'-1'%}">이전 글</a></p>
+    <p><a href="{%url 'detail' blog.id|add:" 1"%}">다음 글</a></p>
 </div>
 
 <script>
