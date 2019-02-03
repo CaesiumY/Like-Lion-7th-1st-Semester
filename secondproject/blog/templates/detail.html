@@ -17,9 +17,9 @@
         </div>
     </div>
 </div>
-<div class='blogs {% if blog.id|add:"-1" == 0 %}disabled{% endif %}'>
-    <p><a href="{%url 'detail' blog.id|add:'-1'%}">이전 글</a></p>
-    <p><a href="{%url 'detail' blog.id|add:'1'%}">다음 글</a></p>
+<div class='blogs'>
+    <p><a class="{% if blog.id|add:'-1' == 0 %} disable {% endif %}" href="{%url 'detail' blog.id|add:'-1'%}">이전 글</a></p>
+    <p><a class="{% if blog.id|add:'1' == 0 %} disable {% endif %}" href="{%url 'detail' blog.id|add:'1'%}">다음 글</a></p>
 </div>
 
 <script>
@@ -28,4 +28,10 @@
         element.classList.add("active");
     })();
 </script>
+<style>
+    .disable {
+        pointer-events: none;
+    }
+</style>
+
 {%endblock%}
