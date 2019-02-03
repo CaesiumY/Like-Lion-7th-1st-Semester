@@ -17,9 +17,9 @@
         </div>
     </div>
 </div>
-<div class='blogs'>
+<div class='blogs {% if blog.id|add:"-1" == 0 %}disabled{% endif %}'>
     <p><a href="{%url 'detail' blog.id|add:'-1'%}">이전 글</a></p>
-    <p><a href="{%url 'detail' blog.id|add:" 1"%}">다음 글</a></p>
+    <p><a href="{%url 'detail' blog.id|add:'1'%}">다음 글</a></p>
 </div>
 
 <script>
