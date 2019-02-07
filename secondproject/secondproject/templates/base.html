@@ -36,12 +36,17 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto text-uppercase jalnan">
         <a class="nav-item nav-link" href="{%url 'home'%}" id="home">Home <span class="sr-only">(current)</span></a>
+        {% if user.is_authenticated %}
         <a class="nav-item nav-link" href="{%url 'blog'%}" id="blog">Blog</a>
         <a class="nav-item nav-link" href="{%url 'new'%}" id="new">글쓰기</a>
+        {%endif%}
         <a class="nav-item nav-link" href="{%url 'portfolio'%}" id="portfolio">포트폴리오</a>
+        {% if user.is_authenticated %}
         <a class="nav-item nav-link" href="{%static '수료증 - 전북대 - 윤창식.pdf'%}">수료증</a>
-        <a class="nav-item nav-link" href="{%url 'login'%}" id="login">로그인</a>
         <a class="nav-item nav-link" href="{%url 'logout'%}" id="login">로그아웃</a>
+        {%else%}
+        <a class="nav-item nav-link" href="{%url 'login'%}" id="login">로그인</a>
+        {%endif%}
       </div>
     </div>
   </nav>
