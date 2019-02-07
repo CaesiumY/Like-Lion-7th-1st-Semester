@@ -6,7 +6,8 @@
 
     <h1>Login</h1>
 
-    <form class="p-4">
+    <form class="p-4" method="POST" action="{%url 'login'%}">
+        {%csrf_token%}
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" class="form-control" id="username" name="username" placeholder="Username">
