@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.core.paginator import Paginator
+from django.urls import reverse
 from .models import Blog
 
 # Create your views here.
@@ -17,7 +18,7 @@ def create(request):
 
 def blog(request):
     blogs = Blog.objects
-    blog_list = Blog.objects.all()
+    blog_list = Blog.objects.all().order_by('-id')
 
     paginator = Paginator(blog_list, 3)
     page = request.GET.get('page')
