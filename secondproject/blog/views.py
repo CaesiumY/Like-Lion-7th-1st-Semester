@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from django.core.paginator import Paginator
 from .models import Blog
+from .forms import BlogPost
 
 # Create your views here.
 
@@ -43,3 +44,16 @@ def destroy(request, blog_id):
     blog = get_object_or_404(Blog, pk=blog_id)
     blog.delete()
     return redirect('/blog/')
+
+
+def blogpost(request):
+    if request.method == 'POST':
+        form = blogpost(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.pub_date = timezone.now()
+            post.save()
+            return redirect('blog.html')
+    else:
+        form = BlogPost()
+        return render(request, 'new.html', {'form': form})
