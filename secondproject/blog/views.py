@@ -48,12 +48,12 @@ def destroy(request, blog_id):
 
 def blogpost(request):
     if request.method == 'POST':
-        form = blogpost(request.POST)
+        form = BlogPost(request.POST)
         if form.is_valid():
             post = form.save(commit=False)
             post.pub_date = timezone.now()
             post.save()
-            return redirect('blog.html')
+            return redirect('blog')
     else:
         form = BlogPost()
         return render(request, 'new.html', {'form': form})
