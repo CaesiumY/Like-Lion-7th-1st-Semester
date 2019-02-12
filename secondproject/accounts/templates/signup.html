@@ -10,7 +10,7 @@
 
 <h1>Sign up!</h1>
 
-<form class="p-1" method="POST" action="{%url 'signup'%}">
+<!-- <form class="p-1" method="POST" action="{%url 'signup'%}">
     {% csrf_token %}
     <div class="form-group">
         <label>Username</label>
@@ -34,6 +34,17 @@
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Sign in</button>
+</form> -->
+
+<form action="{%url 'signup'%}" method="POST">
+    {%csrf_token%}
+    <div class="form-group">
+        <table>
+            {{form}}
+        </table>
+    </div>
+    <br>
+    <input type="submit" name="" value="Sign Up" class="btn btn-primary">
 </form>
 
 {%endblock%}

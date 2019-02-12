@@ -11,7 +11,7 @@
 <div class="container">
 
     <h1>Login</h1>
-    <form class="p-4" method="POST" action="{%url 'login'%}">
+    <!-- <form class="p-4" method="POST" action="{%url 'login'%}">
         {%csrf_token%}
         <div class="form-group">
             <label for="username">Username</label>
@@ -31,7 +31,19 @@
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
         <br>
+    </form> -->
+
+    <form action="{%url 'login'%}" method="POST">
+        {%csrf_token%}
+        <div class="form-group">
+            <table>
+                {{form.as_table}}
+            </table>
+        </div>
+        <br>
+        <input type="submit" name="" value="Login" class="btn btn-primary">
     </form>
+
     <div class="dropdown-divider"></div>
     <a class="dropdown-item" href="{%url 'signup'%}">Sign up</a>
     <a class="dropdown-item" href="#">Forgot password?</a>
