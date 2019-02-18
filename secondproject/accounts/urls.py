@@ -5,5 +5,5 @@ urlpatterns = [
     path('signup/', accounts.views.signup, name="signup"),
     path('login/', accounts.views.login, name="login"),
     path('logout/', accounts.views.logout, name="logout"),
-    path('social/', include('allauth.urls')),
+    path('', include('allauth.urls')),
 ]
