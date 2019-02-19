@@ -2,13 +2,36 @@
 {%load static%}
 
 {%block content%}
+<br>
+<!-- 네이버 지도 api -->
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=t449znwslv"></script>
+<div id="map" style="width:100%;height:600px;"></div>
+<script>
+    var mapOptions = {
+        center: new naver.maps.LatLng(35.846671, 127.129398),
+        zoom: 11,
+        scaleControl: true,
+        logoControl: false,
+        mapDataControl: true,
+        zoomControl: true,
+        minZoom: 1
+    };
 
+    var map = new naver.maps.Map('map', mapOptions);
+
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(35.846671, 127.129398),
+        map: map
+    });
+</script>
+<br>
 <!-- 페이스북 임베디드 테스트 -->
-<br><br>
+
 <div class="fb-page" data-href="https://www.facebook.com/likelioncbnu" data-tabs="timeline" data-small-header="true"
     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
     <blockquote cite="https://www.facebook.com/likelioncbnu" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/likelioncbnu">멋쟁이사자처럼at전북대</a></blockquote>
 </div>
+<br>
 
 <!-- 페이스북 스크립트 -->
 <div id="fb-root"></div>
