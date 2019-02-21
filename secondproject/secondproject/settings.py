@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'portfolio.apps.PortfolioConfig',
     'accounts.apps.AccountsConfig',
+    'imagekit',
 
     # allauth
     'allauth',
