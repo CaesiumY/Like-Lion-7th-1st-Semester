@@ -9,3 +9,5 @@ firstproject - wordcount
 secondproject - making blog with models
 
 Javascript_Challenge - replit assignment for Javascript
+
+django-accounts - reusable-app test
