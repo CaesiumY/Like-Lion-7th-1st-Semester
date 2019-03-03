@@ -1,10 +1,10 @@
 # 멋쟁이 사자처럼 7기 at 전북대학교
 
+---
+
 ## [전북대 멋사 7기 대표 **윤창식**](https://github.com/CaesiumY)
 
 [[전북대 Facebook 페이지]](https://www.facebook.com/likelioncbnu/)
-
----
 
 ## 운영진 스터디 Repository
 
