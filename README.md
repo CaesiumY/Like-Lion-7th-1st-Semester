@@ -101,3 +101,7 @@
 
 - 학기 중 오프라인 강의 및 스터디 계획 **[진행중]**
 - 멋사 운영진 스터디 마지막 과제 제출 **[진행중]**
+
+# 7기 2학기 과정으로💨
+
+https://github.com/CaesiumY/Like-Lion-7th-2nd-Semester
