@@ -39,7 +39,7 @@
 <br/>
 
 [[Week 2]](https://github.com/CaesiumY/python-django_with_Likelion/tree/master/firstproject)<br/>
-2주자 - 1.wordcount 이론 **[완료]**<br/>
+2주차 - 1.wordcount 이론 **[완료]**<br/>
 2주차 - 2.wordcount 실습 part 1 **[완료]**<br/>
 2주차 - 3.wordcount 실습 part 2 **[완료]** + [[파이썬 - 한국어 형태소 라이브러리]](https://konlpy-ko.readthedocs.io/ko/v0.4.3/#) <br/>
 2.5주차 - Git **[완료]**<br/>
