@@ -30,7 +30,7 @@
 <br/>
 
 [[Week 1]](https://github.com/CaesiumY/python-django_with_Likelion/tree/master/firstsite)<br/>
-0주자 - 1.오리엔테이션 **[완료]**<br/>
+0주차 - 1.오리엔테이션 **[완료]**<br/>
 1주차 - 1.기본환경 셋팅 **[완료]**<br/>
 1주차 - 2.Hello World 이론 **[완료]**<br/>
 1주차 - 3.Hello World 실습 **[완료]**<br/>
