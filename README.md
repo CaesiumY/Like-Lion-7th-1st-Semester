@@ -30,7 +30,7 @@
 <br/>
 
 [[Week 1]](https://github.com/CaesiumY/python-django_with_Likelion/tree/master/firstsite)<br/>
-0주자 - 1.오리엔테이션 **[완료]**<br/>
+0주차 - 1.오리엔테이션 **[완료]**<br/>
 1주차 - 1.기본환경 셋팅 **[완료]**<br/>
 1주차 - 2.Hello World 이론 **[완료]**<br/>
 1주차 - 3.Hello World 실습 **[완료]**<br/>
@@ -39,7 +39,7 @@
 <br/>
 
 [[Week 2]](https://github.com/CaesiumY/python-django_with_Likelion/tree/master/firstproject)<br/>
-2주자 - 1.wordcount 이론 **[완료]**<br/>
+2주차 - 1.wordcount 이론 **[완료]**<br/>
 2주차 - 2.wordcount 실습 part 1 **[완료]**<br/>
 2주차 - 3.wordcount 실습 part 2 **[완료]** + [[파이썬 - 한국어 형태소 라이브러리]](https://konlpy-ko.readthedocs.io/ko/v0.4.3/#) <br/>
 2.5주차 - Git **[완료]**<br/>
@@ -101,3 +101,7 @@
 
 - 학기 중 오프라인 강의 및 스터디 계획 **[진행중]**
 - 멋사 운영진 스터디 마지막 과제 제출 **[진행중]**
+
+# 7기 2학기 과정으로💨
+
+https://github.com/CaesiumY/Like-Lion-7th-2nd-Semester
