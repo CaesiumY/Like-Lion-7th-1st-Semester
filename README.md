@@ -10,7 +10,7 @@
 
 ### 자바스크립트 챌린지! 165문
 
-110 / 165 **[진행중]** <br>
+115 / 165 **[진행중]** <br>
 [[Code]](https://github.com/CaesiumY/python-django_with_Likelion/tree/master/Javascript_Challenge)
 
 <br/>
